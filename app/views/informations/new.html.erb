@@ -1,0 +1,21 @@
+
+<h1>Person</h1>
+
+<%= form_with model: @information do |form| %>
+  <div>
+    <%= form.label :name %><br>
+    <%= form.text_field :name %>
+  </div>
+
+  <div>
+    <%= form.label :age %><br>
+    <%= form.text_field :age %>
+  </div>
+  <div>
+  <%= form.label :number%><br>
+  <%= form.text_field :number%>
+</div>
+  <div>
+    <%= form.submit %>
+  </div>
+<% end %>

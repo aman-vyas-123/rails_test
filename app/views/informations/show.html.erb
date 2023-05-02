@@ -1,0 +1,12 @@
+<h1><%= @information.name %></h1>
+
+<p><%= @information.age %></p>
+
+<p><%= @information.number %></p>
+
+<ul>
+  <li><%= link_to "Destroy", information_path(@information), data: {
+                    turbo_method: :delete,
+                    turbo_confirm: "Are you sure?"
+                  } %></li>
+</ul>

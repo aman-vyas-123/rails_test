@@ -1,0 +1,9 @@
+<h1>Information</h1>
+
+<ul>
+  <% @informations.each do |information| %>
+    <li>
+      <%= link_to information.name, information  %>
+    </li>
+  <% end %>
+</ul>
